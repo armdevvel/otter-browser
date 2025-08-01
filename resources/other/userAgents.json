@@ -1,7 +1,7 @@
 [
 	{
 		"identifier": "default",
-		"value": "Mozilla/5.0 {platform} {engineVersion} {applicationVersion}"
+		"value": "Mozilla/5.0 {platform} {engineVersion} Otter Version/10.0 Safari/602.1"
 	},
 	"separator",
 	{

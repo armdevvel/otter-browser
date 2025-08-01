@@ -195,8 +195,8 @@ void SettingsManager::createInstance(const QString &path)
 	registerOption(Permissions_ScriptsCanOpenWindowsOption, EnumerationType, QLatin1String("ask"), QStringList({QLatin1String("ask"), QLatin1String("blockAll"), QLatin1String("openAll"), QLatin1String("openAllInBackground")}));
 	registerOption(Permissions_ScriptsCanReceiveRightClicksOption, BooleanType, true);
 	registerOption(Permissions_ScriptsCanShowStatusMessagesOption, BooleanType, false);
-	registerOption(Search_DefaultQuickSearchEngineOption, EnumerationType, QLatin1String("duckduckgo"), QStringList(QLatin1String("duckduckgo")));
-	registerOption(Search_DefaultSearchEngineOption, EnumerationType, QLatin1String("duckduckgo"), QStringList(QLatin1String("duckduckgo")));
+	registerOption(Search_DefaultQuickSearchEngineOption, EnumerationType, QLatin1String("google"), QStringList(QLatin1String("google")));
+	registerOption(Search_DefaultSearchEngineOption, EnumerationType, QLatin1String("google"), QStringList(QLatin1String("google")));
 	registerOption(Search_EnableFindInPageAsYouTypeOption, BooleanType, true);
 	registerOption(Search_EnableFindInPageHighlightAllOption, BooleanType, false);
 	registerOption(Search_ReuseLastQuickFindQueryOption, BooleanType, false);
@@ -224,7 +224,7 @@ void SettingsManager::createInstance(const QString &path)
 	registerOption(StartPage_TileWidthOption, IntegerType, 270);
 	registerOption(StartPage_TilesPerRowOption, IntegerType, 0);
 	registerOption(StartPage_ZoomLevelOption, IntegerType, 100);
-	registerOption(TabBar_EnablePreviewsOption, BooleanType, true);
+	registerOption(TabBar_EnablePreviewsOption, BooleanType, false);
 	registerOption(TabBar_EnableThumbnailsOption, BooleanType, false);
 	registerOption(TabBar_MaximumTabHeightOption, IntegerType, -1);
 	registerOption(TabBar_MinimumTabHeightOption, IntegerType, -1);

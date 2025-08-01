@@ -474,7 +474,7 @@ void NetworkManagerFactory::readUserAgent(const QJsonValue &value, UserAgentDefi
 
 		if (identifier == QLatin1String("default"))
 		{
-			userAgent.value = QLatin1String("Mozilla/5.0 {platform} {engineVersion} {applicationVersion}");
+			userAgent.value = QLatin1String("Mozilla/5.0 {platform} {engineVersion} Otter Version/10.0 Safari/602.1");
 		}
 		else if (userAgentObject.contains(QLatin1String("children")))
 		{
@@ -751,7 +751,7 @@ UserAgentDefinition NetworkManagerFactory::getUserAgent(const QString &identifie
 		UserAgentDefinition userAgent;
 		userAgent.identifier = QLatin1String("default");
 		userAgent.title = QT_TRANSLATE_NOOP("userAgents", "Default User Agent");
-		userAgent.value = QLatin1String("Mozilla/5.0 {platform} {engineVersion} {applicationVersion}");
+		userAgent.value = QLatin1String("Mozilla/5.0 {platform} {engineVersion} Otter Version/10.0 Safari/602.1");
 
 		return userAgent;
 	}
